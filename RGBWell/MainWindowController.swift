@@ -25,7 +25,7 @@ class MainWindowContoller: NSWindowController {
         super.didChangeValue(forKey: key)
     }
     
-    class func keyPathsForValuesAffectingColor() -> NSSet {
+    @objc class func keyPathsForValuesAffectingColor() -> NSSet {
         return Set(["red", "green", "blue"]) as NSSet
     }
 }
