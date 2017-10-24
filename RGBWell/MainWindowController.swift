@@ -21,7 +21,7 @@ class MainWindowContoller: NSWindowController {
     }
     
     override func didChangeValueForKey(key: String) {
-        print("Key is \(key)")
+        print("Key is \(key)", terminator: "")
         super.didChangeValueForKey(key)
     }
     
