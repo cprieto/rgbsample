@@ -20,11 +20,6 @@ class MainWindowContoller: NSWindowController {
         return NSNib.Name("MainWindowController")
     }
     
-    override func didChangeValue(forKey key: String) {
-        print("Key is \(key)", terminator: "")
-        super.didChangeValue(forKey: key)
-    }
-    
     @objc class func keyPathsForValuesAffectingColor() -> NSSet {
         return Set(["red", "green", "blue"]) as NSSet
     }
